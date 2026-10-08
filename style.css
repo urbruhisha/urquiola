@@ -1805,3 +1805,44 @@ html {
   }
 
 }
+
+
+/* ==========================================
+   HERO — REMOVE EXCESS EMPTY SPACE
+========================================== */
+
+@media (min-width: 701px) {
+
+  .hero {
+    min-height: 0;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .hero-visual {
+    flex: none;
+    height: clamp(420px, 48vw, 610px);
+    min-height: 0;
+  }
+
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-year {
+    bottom: 10%;
+  }
+
+  .hero-location {
+    bottom: 10%;
+  }
+
+  .hero::after {
+    bottom: -420px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+  }
+
+}
